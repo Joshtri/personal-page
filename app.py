@@ -14,7 +14,7 @@ with st.container():
         st.write("[You can check my GitHub 👈](https://github.com/Joshtri)")
 
     with col2:
-        st.image("profile.jpg", width=200, caption="Profile Image")
+        st.image("profile.jpg", width=200, )
 
 # About Me section
 with st.container():
