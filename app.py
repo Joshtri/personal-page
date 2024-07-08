@@ -5,11 +5,13 @@ from streamlit_lottie import st_lottie
 # Set page configuration    
 st.set_page_config(page_title="Joshtri Web Page", page_icon=":tada", layout="wide")
 
+# Function to load Lottie animations
 def load_lottieurl(url):
-    r= requests.get(url)
-    if r.status_code !=200:
+    r = requests.get(url)
+    if r.status_code != 200:
         return None
     return r.json()
+
 
 #load assets
 lottie_coding= "https://lottie.host/76343b89-684b-411b-8b22-194c0d99ab83/VcYK0fj9kL.json"
@@ -45,7 +47,7 @@ with st.container():
         )
     
     with col2:
-        st_lottie(lottie_coding, height=200, key="coding")
+        st_lottie(lottie_coding, height=300, key="coding")
 
 
 # Image section
