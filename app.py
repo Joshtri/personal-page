@@ -12,9 +12,8 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-
-#load assets
-lottie_coding= "https://lottie.host/76343b89-684b-411b-8b22-194c0d99ab83/VcYK0fj9kL.json"
+# Load assets
+lottie_coding = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_4wV6xf.json")  # Change to a valid Lottie JSON URL
 
 # Header section with image
 with st.container():
@@ -49,20 +48,19 @@ with st.container():
     with col2:
         st_lottie(lottie_coding, height=300, key="coding")
 
-
 # Image section
-# with st.container():
-#     st.write("---")
-#     st.header("Gallery")
-#     st.write("##")
+with st.container():
+    st.write("---")
+    st.header("Gallery")
+    st.write("##")
 
-#     col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
 
-#     with col1:
-#         st.image("https://via.placeholder.com/150", caption="Project 1")
+    with col1:
+        st.image("https://via.placeholder.com/150", caption="Project 1")
 
-#     with col2:
-#         st.image("https://via.placeholder.com/150", caption="Project 2")
+    with col2:
+        st.image("https://via.placeholder.com/150", caption="Project 2")
 
-#     with col3:
-#         st.image("https://via.placeholder.com/150", caption="Project 3")
+    with col3:
+        st.image("https://via.placeholder.com/150", caption="Project 3")
